@@ -1,26 +1,89 @@
 @import "tailwindcss";
 
+
+
+/* -------------------------
+   Custom Local Fonts
+-------------------------- */
+@font-face {
+  font-family: "TitleFont";
+  src: url("/fonts/titleFont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NavbarFont";
+  src: url("/fonts/navbarFont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MainFont";
+  src: url("/fonts/mainFont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SubtitleFont";
+  src: url("/fonts/subTitleFont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* -------------------------
+   Root Font Variables
+-------------------------- */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-title: "TitleFont", sans-serif;
+  --font-navbar: "NavbarFont", sans-serif;
+  --font-main: "MainFont", sans-serif;
+  --font-subtitle: "SubtitleFont", sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+
+
+body,
+html {
+  overflow-x: hidden;
+  position: relative;
+ font-family: var(--font-main);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.font-navbar {
+  @apply font-sans; /* fallback */
+  font-family: var(--font-navbar);
+}
+
+.font-title {
+  @apply font-sans;
+  font-family: var(--font-title);
+}
+
+.font-subtitle {
+  @apply font-sans;
+  font-family: var(--font-subtitle);
+}
+/* @keyframes moveStroke {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: moveStroke 3s linear infinite;
+} */
+
+
