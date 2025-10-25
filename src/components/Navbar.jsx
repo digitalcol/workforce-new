@@ -446,7 +446,7 @@ export default function WindsurfNav() {
           <div className="flex items-center gap-2 ml-4">
             {/* WhatsApp */}
             <a
-              href="https://wa.me/919980511980"
+              href="https://wa.me/919945933333"
               target="_blank"
               rel="noopener noreferrer"
               className={`flex h-10 w-10 items-center justify-center rounded-full border transition-colors ${
@@ -472,7 +472,7 @@ export default function WindsurfNav() {
 
             {/* Phone */}
             <a
-              href="tel:+919980511980"
+              href="tel:+919945933333"
               className={`flex h-10 w-10 items-center justify-center rounded-full border transition-colors ${
                 scrolled
                   ? "border-black bg-white text-black hover:bg-gray-100 hover:border-black hover:text-black"
@@ -526,7 +526,7 @@ export default function WindsurfNav() {
               {/* Contact Icons */}
               <div className="flex gap-2 mt-2">
                 <a
-                  href="https://wa.me/919980511980"
+                  href="https://wa.me/919945933333"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-full border border-black text-black hover:bg-black hover:text-white transition-colors"
@@ -540,7 +540,7 @@ export default function WindsurfNav() {
                   <MdEmail className="h-4 w-4" />
                 </a>
                 <a
-                  href="tel:+919980511980"
+                  href="tel:+919945933333"
                   className="flex h-10 w-10 items-center justify-center rounded-full border border-black text-black hover:bg-black hover:text-white transition-colors"
                 >
                   <FiPhone className="h-4 w-4" />
